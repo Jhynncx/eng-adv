@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/eng-adv">
       <div className="App">
         <Routes>
           {/* 기본 경로: 메인 페이지 */}
