@@ -1,0 +1,109 @@
+.case-selector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #e0e0e0;
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.case-selector button {
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #555;
+  transition: all 0.2s;
+}
+
+.case-selector button.active {
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pad-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.pad-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.alphabet-selector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.alphabet-selector button {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  transition: all 0.2s;
+}
+
+.alphabet-selector button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.alphabet-selector button.active {
+  background-color: #ffc107;
+  border-color: #e0a800;
+  color: #333;
+}
+
+.drawing-pad {
+  border: 5px solid #a0a0a0;
+  border-radius: 10px;
+  cursor: crosshair;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.clear-button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #555;
+  border-radius: 8px;
+  background-color: #ff6b6b;
+  color: white;
+  transition: all 0.2s;
+  box-shadow: 0 4px 0 #c44d4d;
+}
+
+.clear-button:hover {
+  background-color: #ff4f4f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #c44d4d;
+}
+
+.clear-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #c44d4d;
+}
