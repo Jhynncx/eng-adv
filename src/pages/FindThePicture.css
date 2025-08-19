@@ -1,0 +1,108 @@
+.find-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.find-game-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.score-display {
+  position: absolute;
+  right: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.question-area {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.question-area p {
+  font-size: 1.5em;
+  color: #555;
+}
+
+.play-sound-button {
+  padding: 15px 30px;
+  font-size: 1.8em;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #555;
+  border-radius: 12px;
+  background-color: #87CEEB;
+  color: #333;
+  transition: all 0.2s;
+  box-shadow: 0 4px 0 #5f9ea0;
+}
+
+.play-sound-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #5f9ea0;
+}
+
+.play-sound-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #5f9ea0;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 30px;
+}
+
+.option-card {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.option-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.feedback-message {
+  margin-top: 30px;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 15px;
+  animation: popIn 0.3s ease-in-out;
+}
+
+.feedback-message.correct {
+  color: white;
+  background-color: #28a745; /* 초록색 */
+}
+
+.feedback-message.incorrect {
+  color: white;
+  background-color: #dc3545; /* 빨간색 */
+}
+
+/* popIn 애니메이션은 WordCardGame.css와 동일 */
+@keyframes popIn {
+  0% { transform: scale(0.7); opacity: 0; }
+  70% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}

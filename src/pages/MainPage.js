@@ -20,11 +20,12 @@ function MainPage() {
       <p>글자를 따라 쓰며 익혀봐요!</p>
     </Link>
 
-    <div className="game-card disabled">
+   {/* '그림 찾기 게임' 카드를 Link로 변경 (CHANGED) */}
+    <Link to="/find-the-picture" className="game-card">
       <h2>그림 찾기 게임</h2>
-      <p>(준비 중이에요!)</p>
-    </div>
-      </div>
+      <p>소리를 듣고 그림을 찾아봐요!</p>
+    </Link>
+</div>
     </div>
   );
 }
