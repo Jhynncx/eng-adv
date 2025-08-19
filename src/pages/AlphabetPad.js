@@ -76,7 +76,7 @@ function AlphabetPad() {
   const handleAlphabetClick = (char) => {
     setCurrentAlphabet(char);
     // toUpperCase()를 사용해 대/소문자 모두 대문자 파일(A.mp3)을 사용하도록 함
-    const audio = new Audio(`/audio/${char.toUpperCase()}.mp3`);
+    const audio = new Audio(`${process.env.PUBLIC_URL}/audio/${char.toUpperCase()}.mp3`);
     audio.play();
   };
 

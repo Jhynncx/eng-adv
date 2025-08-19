@@ -69,7 +69,7 @@ function WordCardGame() {
     }
 
     const clickedCard = cards[index];
-    const audio = new Audio(`/audio/${clickedCard.sound}`);
+    const audio = new Audio(`${process.env.PUBLIC_URL}/audio/${clickedCard.sound}`);
     audio.play();
     
     setFlippedIndices([...flippedIndices, index]);
