@@ -1,0 +1,105 @@
+.train-game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #e0f7fa;
+  min-height: 100vh;
+}
+
+.train-game-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.instruction {
+  font-size: 1.2em;
+  color: #37474f;
+  margin-bottom: 30px;
+}
+
+.train-track {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-image: 
+    repeating-linear-gradient(90deg, #795548, #795548 20px, #a1887f 20px, #a1887f 40px);
+  border-top: 5px solid #5d4037;
+  border-bottom: 5px solid #5d4037;
+  min-width: 600px;
+}
+
+.train-car {
+  width: 100px;
+  height: 80px;
+  background-color: #ffca28;
+  border: 3px solid #c79100;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  pointer-events: none;
+}
+
+.train-car.shake {
+  animation: incorrect-shake 0.5s; /* MathMonster.css의 애니메이션 재사용 가능 */
+}
+
+.options-depot {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+}
+
+.train-car.option {
+  cursor: grab;
+  background-color: #66bb6a;
+  border-color: #388e3c;
+  pointer-events: auto;
+}
+.train-car.option:active {
+  cursor: grabbing;
+}
+
+.success-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: popIn 0.3s;
+  z-index: 100;
+}
+
+.success-popup h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #388e3c;
+}
+
+.success-popup button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffca28;
+  font-weight: bold;
+}

@@ -6,6 +6,9 @@ import MainPage from './pages/MainPage';
 import WordCardGame from './pages/WordCardGame';
 import AlphabetPad from './pages/AlphabetPad'; 
 import FindThePicture from './pages/FindThePicture';
+import MathMonster from './pages/MathMonster';
+import NumberTrain from './pages/NumberTrain';
+import ClockGame from './pages/ClockGame';
 
 import './App.css';
 
@@ -24,6 +27,9 @@ function App() {
           <Route path="/alphabet-pad" element={<AlphabetPad />} />
            {/* '/find-the-picture' 경로 추가 (NEW) */}
           <Route path="/find-the-picture" element={<FindThePicture />} />
+          <Route path="/math-monster" element={<MathMonster />} />
+          <Route path="/number-train" element={<NumberTrain />} />
+          <Route path="/clock-game" element={<ClockGame />} />
         </Routes>
       </div>
     </Router>

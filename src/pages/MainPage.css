@@ -41,3 +41,23 @@
 h2 {
   margin-top: 0;
 }
+
+/* MainPage.css 파일 맨 아래에 추가 */
+
+.section-title {
+  margin-top: 0;
+}
+
+.section-divider {
+  border-bottom: 2px dashed #ccc;
+  margin: 60px auto;
+  width: 80%;
+}
+
+/* 수학 카드 색상을 다르게 설정 */
+.game-card.math-card {
+  border-color: #a0d8a0;
+}
+.game-card.math-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 128, 0, 0.1);
+}
