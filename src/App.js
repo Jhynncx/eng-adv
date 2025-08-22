@@ -9,6 +9,9 @@ import FindThePicture from './pages/FindThePicture';
 import MathMonster from './pages/MathMonster';
 import NumberTrain from './pages/NumberTrain';
 import ClockGame from './pages/ClockGame';
+import HangulWizard from './pages/HangulWizard';
+import WordPicturePuzzle from './pages/WordPicturePuzzle';
+import FinalConsonantQuiz from './pages/FinalConsonantQuiz';
 
 import './App.css';
 
@@ -30,6 +33,11 @@ function App() {
           <Route path="/math-monster" element={<MathMonster />} />
           <Route path="/number-train" element={<NumberTrain />} />
           <Route path="/clock-game" element={<ClockGame />} />
+          {/* '/hangul-wizard' 경로 추가 (NEW) */}
+          <Route path="/hangul-wizard" element={<HangulWizard />} />
+          {/* '/word-puzzle' 경로 추가 (NEW) */}
+          <Route path="/word-puzzle" element={<WordPicturePuzzle />} />
+           <Route path="/final-consonant-quiz" element={<FinalConsonantQuiz />} />
         </Routes>
       </div>
     </Router>

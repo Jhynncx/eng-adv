@@ -61,3 +61,10 @@ h2 {
 .game-card.math-card:hover {
   box-shadow: 0 10px 20px rgba(0, 128, 0, 0.1);
 }
+
+.game-card.hangul-card {
+  border-color: #ffcc80; /* 주황색 계열 */
+}
+.game-card.hangul-card:hover {
+  box-shadow: 0 10px 20px rgba(255, 152, 0, 0.15);
+}

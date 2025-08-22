@@ -41,6 +41,25 @@ function MainPage() {
           <p>시침과 분침을 움직여 시간을 맞춰요!</p>
         </Link>
       </div>
+
+      <div className="section-divider"></div>
+      <h1 className="section-title">💡 똑똑 한글 탐험 💡</h1>
+      <p>재미있는 게임으로 한글과 친해져요!</p>
+      <div className="game-menu">
+        <Link to="/hangul-wizard" className="game-card hangul-card">
+          <h2>글자 조합 마법사</h2>
+          <p>자음과 모음을 합쳐 글자를 만들어요!</p>
+        </Link>
+         {/* '낱말 그림 퍼즐' 카드를 Link로 변경 (CHANGED) */}
+        <Link to="/word-puzzle" className="game-card hangul-card">
+          <h2>낱말 그림 퍼즐</h2>
+          <p>그림을 보고 낱말을 완성해요!</p>
+        </Link>
+         <Link to="/final-consonant-quiz" className="game-card hangul-card">
+          <h2>받침을 찾아라!</h2>
+          <p>그림을 보고 알맞은 받침을 찾아요!</p>
+        </Link>
+      </div>
     </div>
   );
 }
